@@ -1,15 +1,25 @@
-profile_id: EXAMPLE
+profile_id: UNKNOWN
 device:
-  platform: null
-  type: null
-  model: null
+  platform: Fractal Audio Axe FX II
+  model: USA IIC++
 settings:
-  input_drive: 0.0
-  bass: 0.0
-  mid: 0.0
-  treble: 0.0
-  presence: 0.0
+  input_drive: 8.0
+  overdrive: 8.0
+  bass: 2.0
+  mid: 2.0
+  treble: 7.0
+  bright: 0.0
+  presence: 10.0
   depth: 0.0
-  gain: 0.0
-tags: []
-notes: ''
+  master_volume: 5.5
+  input_trim: true
+  boost: false
+  cut: false
+  fat: false
+  bright_switch: true
+  bright_cap: 120.0
+  saturation_switch: null
+  saturation_drive: 4.0
+  master_volume_trim: 1.0
+  level: -13.0
+notes: 'Использован в пресетах: Mark IIC++ Crunchberry, Mark IIC++ 2017'
