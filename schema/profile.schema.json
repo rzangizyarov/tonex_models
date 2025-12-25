@@ -1,0 +1,29 @@
+{
+  "$id": "profile.schema.json",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "device",
+    "settings"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string"
+    },
+    "device": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "platform": {
+          "type": "string"
+        }
+      }
+    },
+    "settings": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

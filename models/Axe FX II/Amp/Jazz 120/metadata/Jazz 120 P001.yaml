@@ -1,0 +1,15 @@
+profile_id: UNKNOWN
+device:
+  platform: null
+  type: null
+  model: null
+settings:
+  input_drive: 0.0
+  bass: 1.0
+  mid: 4.0
+  treble: 0.0
+  presence: 0.0
+  depth: 0.0
+  gain: 0.0
+tags: []
+notes: ''
