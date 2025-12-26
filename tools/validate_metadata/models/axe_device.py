@@ -1,8 +1,8 @@
 from typing import Optional
 
-from pydantic import BaseModel
+from tools.validate_metadata.models.device import Device
 
 
-class AxeDevice(BaseModel):
+class AxeDevice(Device):
     platform: str = "Fractal Audio Axe FX II"
     model: Optional[str] = None

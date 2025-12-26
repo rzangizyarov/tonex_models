@@ -1,13 +1,11 @@
-from typing import List
-
 from pydantic import BaseModel
 
-from tools.validate_metadata.models.axe_settings import AxeSettings
+from tools.validate_metadata.models.axe_amp_settings import AxeAmpSettings
 from tools.validate_metadata.models.axe_device import AxeDevice
 
 
-class AxeProfile(BaseModel):
+class AxeAmpProfile(BaseModel):
     profile_id: str = "UNKNOWN"
     device: AxeDevice = AxeDevice()
-    settings: AxeSettings = AxeSettings()
+    settings: AxeAmpSettings = AxeAmpSettings()
     notes: str = ""

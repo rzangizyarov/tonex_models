@@ -1,9 +1,9 @@
 from typing import Optional
 
-from pydantic import BaseModel
+from tools.validate_metadata.models.settings import Settings
 
 
-class AxeSettings(BaseModel):
+class AxeAmpSettings(Settings):
     input_drive: Optional[float] = None
     overdrive: Optional[float] = None
     bass: Optional[float] = None
