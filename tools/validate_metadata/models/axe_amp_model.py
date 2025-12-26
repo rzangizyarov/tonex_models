@@ -4,7 +4,7 @@ from tools.validate_metadata.models.model import Model
 
 
 class AxeAmpModel(Model):
-    profile_id: str = "UNKNOWN"
+    model_id: str = "UNKNOWN"
     device: AxeDevice = AxeDevice()
     settings: AxeAmpSettings = AxeAmpSettings()
     tonex_version: str = "UNKNOWN"
