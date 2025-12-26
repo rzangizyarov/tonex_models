@@ -34,9 +34,4 @@ class DeviceProfileHandler:
 
             # Перезаписываем YAML с недостающими атрибутами
             self.save_profile(profile, yaml_file)
-
-            txp_file = yaml_file.with_suffix(".txp")
-            if txp_file.exists():
-                print(f"✅ {yaml_file} + {txp_file} OK (обновлено)")
-            else:
-                print(f"⚠ {yaml_file} VALID, но TXP не найден (обновлено)")
+            print(f"✅ {yaml_file} OK (обновлено)")
