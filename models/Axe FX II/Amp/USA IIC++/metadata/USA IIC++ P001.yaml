@@ -12,7 +12,7 @@ settings:
   presence: 10.0
   depth: 0.0
   master_volume: 5.5
-  input_trim: true
+  input_trim: 1.0
   boost: false
   cut: false
   fat: false
