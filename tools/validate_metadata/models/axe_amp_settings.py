@@ -14,7 +14,6 @@ class AxeAmpSettings(Settings):
     depth: Optional[float] = None
     master_volume: Optional[float] = None
     input_trim: Optional[float] = None
-    input_trim: Optional[bool] = None
     boost: Optional[bool] = None
     cut: Optional[bool] = None
     fat: Optional[bool] = None
