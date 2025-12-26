@@ -5,7 +5,7 @@ from tools.validate_metadata.models.settings import Settings
 
 
 class Model(BaseModel):
-    profile_id: str
+    model_id: str
     device: Device
     settings: Settings
     tonex_version: str
