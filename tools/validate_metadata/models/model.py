@@ -8,4 +8,5 @@ class Model(BaseModel):
     profile_id: str
     device: Device
     settings: Settings
+    tonex_version: str
     notes: str

@@ -7,4 +7,5 @@ class AxeAmpModel(Model):
     profile_id: str = "UNKNOWN"
     device: AxeDevice = AxeDevice()
     settings: AxeAmpSettings = AxeAmpSettings()
+    tonex_version: str = "UNKNOWN"
     notes: str = ""
