@@ -4,7 +4,7 @@ from tools.validate_metadata.models.device import Device
 from tools.validate_metadata.models.settings import Settings
 
 
-class Profile(BaseModel):
+class Model(BaseModel):
     profile_id: str
     device: Device
     settings: Settings

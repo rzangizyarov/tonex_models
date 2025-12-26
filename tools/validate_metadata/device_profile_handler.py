@@ -2,36 +2,35 @@ from pathlib import Path
 from typing import Type
 
 import yaml
-from pydantic import BaseModel
 
-from tools.validate_metadata.models.profile import Profile
+from tools.validate_metadata.models.model import Model
 
 
-class DeviceProfileHandler:
+class DeviceModelHandler:
     def __init__(self,
-                 device_profile: Type[Profile],
+                 model_cls: Type[Model],
                  root_dir: Path):
-        self.device_profile: Profile = device_profile
+        self.model_cls: Type[Model] = model_cls
         self.root_dir = root_dir
 
     @staticmethod
-    def load_model(base_model: BaseModel, yaml_path: Path) -> BaseModel:
+    def load_model(model_cls: Type[Model], yaml_path: Path) -> Model:
         data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
         if data is None:  # пустой файл
             data = {}
-        model = base_model(**data)
+        model = model_cls(**data)
         return model
 
     @staticmethod
-    def save_profile(base_model: BaseModel, yaml_path: Path):
+    def save_model(model: Model, yaml_path: Path):
         yaml_path.parent.mkdir(parents=True, exist_ok=True)
         with yaml_path.open("w", encoding="utf-8") as f:
-            yaml.dump(base_model.model_dump(), f, sort_keys=False, allow_unicode=True)
+            yaml.dump(model.model_dump(), f, sort_keys=False, allow_unicode=True)
 
-    def update_profiles(self):
+    def update_models(self):
         for yaml_file in self.root_dir.rglob("*.yaml"):
-            profile = self.load_model(self.device_profile, yaml_file)
+            model = self.load_model(self.model_cls, yaml_file)
 
             # Перезаписываем YAML с недостающими атрибутами
-            self.save_profile(profile, yaml_file)
+            self.save_model(model, yaml_file)
             print(f"✅ {yaml_file} OK (обновлено)")
