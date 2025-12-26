@@ -1,15 +1,3 @@
-*.aux
-*.log
-*.out
-*.pdf
-*.gz
-*.toc
-*.txt
-*.html
-!latex/images/*.pdf
-/latex/assets/emoji/png/*
-/latex/assets/emoji/svg/*
-/.ipynb_checkpoints
 /.idea
 /.venv
-
+/.ipynb_checkpoints
