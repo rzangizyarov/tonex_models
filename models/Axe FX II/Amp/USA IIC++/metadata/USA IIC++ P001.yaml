@@ -22,4 +22,5 @@ settings:
   saturation_drive: 4.0
   master_volume_trim: 1.0
   level: -13.0
+tonex_version: 1.10.4
 notes: 'Использован в пресетах: Mark IIC++ Crunchberry, Mark IIC++ 2017'

@@ -1,7 +1,7 @@
 profile_id: UNKNOWN
 device:
   platform: Fractal Audio Axe FX II
-  model: null
+  model: Jazz 120
 settings:
   input_drive: 3.04
   overdrive: null
@@ -22,4 +22,5 @@ settings:
   saturation_drive: 4.0
   master_volume_trim: 1.0
   level: -7.0
+tonex_version: 1.10.4
 notes: 'Использован в пресетах: New Clean'
