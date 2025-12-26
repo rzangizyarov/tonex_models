@@ -6,7 +6,7 @@ import yaml
 from tools.validate_metadata.models.model import Model
 
 
-class DeviceModelHandler:
+class ModelHandler:
     def __init__(self,
                  model_cls: Type[Model],
                  root_dir: Path):
