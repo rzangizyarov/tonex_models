@@ -2,6 +2,7 @@ from pydantic import BaseModel
 
 
 class ImpulseResponse(BaseModel):
-    model_id: str = "UNKNOWN"
+    id: str = "UNKNOWN"
+    name: str = ""
     source: str = ""
     notes: str = ""
