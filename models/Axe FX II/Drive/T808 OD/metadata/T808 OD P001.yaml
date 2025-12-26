@@ -1,0 +1,10 @@
+model_id: UNKNOWN
+device:
+  platform: Fractal Audio Axe FX II
+  model: T808 OD
+settings:
+  drive: 0.0
+  tone: 5.0
+  level: 8.0
+tonex_version: UNKNOWN
+notes: 'Использован на Axe FX II в пресетах: Mark IIC++ Crunchberry, Mark IIC++ 2017'
